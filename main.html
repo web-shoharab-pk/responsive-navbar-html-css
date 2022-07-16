@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://kit.fontawesome.com/8e007d9920.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- <div>
+          <span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+        </div> -->
+        <div class="navbar">
+          <div>
+            <img src="./assests/image/logo.jpg" alt="" />
+          </div>
+          <div>
+            <ul class="nav-list">
+              <li>
+                <a href="#"> Home </a>
+              </li>
+              <li>
+                <a href="#">Freeze-Drying Process</a>
+              </li>
+              <li>
+                <a href="#">The NS Foundation</a>
+              </li>
+              <li>
+                <a href="#">Idea Hub</a>
+              </li>
+              <li>
+                <a href="#">User Content</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="nav-list">
+              <li>
+                <a href="#">nanogreens</a>
+              </li>
+              <li>
+                <a href="#">nanofruits</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#">
+              <button class="membership-btn">Your Membership</button>
+            </a>
+          </div>
+
+          <div class="menu-bar">
+            <i
+              style="cursor: pointer; z-index: 10; color: white"
+              onclick="dNone()"
+              class="fa-solid fa-bars"
+            ></i>
+            <div onclick="dBlock()" class="hamburger-lines">
+              <span id="line1" class="line line1"></span>
+              <span id="line2" class="line line2"></span>
+              <span id="line3" class="line line3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="mobile-navbar" class="mobile-navbar">
+          <div>
+            <div>
+             
+              <img src="./assests/image/logo.jpg" alt="" />
+            </div>
+
+            <div>
+              <div class="mobile-vab-link">
+                <a href="#">nanofruits</a>
+                <a href="#">nanogreens</a>
+              </div>
+              <br />
+              <div>
+                <ul class="mobile-nav-list">
+                  <li><a href="#">Your Membership</a></li>
+                  <li><a href="#">The NS Foundation</a></li>
+                  <li><a href="#">Idea Hub</a></li>
+                  <li><a href="#">Freeze-Drying Process</a></li>
+                </ul>
+              </div>
+            </div>
+            <br /><br /><br /><br />
+            <div>
+              <ul class="nav-list mobile-nav-link">
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+              <br />
+              <div class="contact-info">
+                <a href="#">Tele phone: 07911 123456</a>
+                <a href="#">Email: info@domain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+ 
+
+      function dBlock(e) {
+        // e.preventDefault();
+
+        var element2 = document.getElementsByClassName("dblock")[0];
+
+        if (element2) {
+          var element = document.getElementById("mobile-navbar");
+          element.classList.remove("dblock");
+
+          var lin1 = document.getElementsByClassName("line1");
+          var lin2 = document.getElementsByClassName("line2");
+          var lin3 = document.getElementsByClassName("line3");
+
+          line1.classList.remove("line11");
+          line2.classList.remove("line22");
+          line3.classList.remove("line33");
+        } else {
+          var element = document.getElementById("mobile-navbar");
+          element.classList.add("dblock");
+
+          var humber = document.getElementsByClassName("hamburger-lines");
+
+          var lin1 = document.getElementById("line1");
+          var lin2 = document.getElementById("line2");
+          var lin3 = document.getElementById("line3");
+
+          line1.classList.add("line11");
+          line2.classList.add("line22");
+          line3.classList.add("line33");
+        }
+      }
+    </script>
+  </body>
+</html>
